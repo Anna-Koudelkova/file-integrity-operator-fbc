@@ -4,19 +4,19 @@ kind: IntegrationTestScenario
 metadata:
   annotations:
     test.appstudio.openshift.io/optional: "true"
-  name: file-integrity-operator-fbc-4-20-e2e-tests
+  name: file-integrity-operator-fbc-4-22-e2e-tests
   namespace: ocp-isc-tenant
 spec:
-  application: file-integrity-operator-fbc-4-20
+  application: file-integrity-operator-fbc-4-22
   contexts:
-  - description: execute the integration test when component file-integrity-operator-fbc-4-20 updates
+  - description: execute the integration test when component file-integrity-operator-fbc-4-22 updates
       state
-    name: component_file-integrity-operator-fbc-4-20
+    name: component_file-integrity-operator-fbc-4-22
   params:
     - name: gangway_api_url
       value: https://gangway-ci.apps.ci.l2s4.p1.openshiftapps.com
     - name: ocp_ci_job_name
-      value: periodic-ci-openshift-openshift-tests-private-release-4.20-amd64-nightly-metal-ds-ipi-ovn-lvms-f999-file-integrity
+      value: periodic-ci-openshift-openshift-tests-private-release-4.22-amd64-nightly-metal-ds-ipi-ovn-lvms-f999-file-integrity
     - name: index_image
       value: MULTISTAGE_PARAM_OVERRIDE_INDEX_IMAGE
   resolverRef:
